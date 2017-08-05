@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timestamp Microservice</title>
+    <meta name="description" content="Free Code Camp back end project">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Timestamp Microservice
+      </h1>
+    </header>
+
+    <main>
+      <p class="bold">What does this do?</p>
+      <p> Pass a string as a parameter, and it will check to see whether that string is a unix timestamp or a natural language date.  If it is a valid form of either one
+      it will return both the unix and natural language format of the date as a JSON response.  Invalid dates return in the same format but with null as the value for both date types.</p>
+      <p>
+        To make things simple I've provided a few strings to get started with.  You can click on them to see it work, or enter your own data into the querystring.
+      </p>
+      
+
+      <section class="dates">
+        <ul id="dates">
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <a href="https://glitch.com">
+        Remix this in Glitch
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
